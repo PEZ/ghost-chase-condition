@@ -10,8 +10,8 @@ public class PrimeSieve {
 	public PrimeSieve(int n) {
 		this.n = n;
 		int half_n = (n + 1) >> 1;
-		sieve = new BitSet(half_n);
-		sieve.set(0, half_n);
+		this.sieve = new BitSet(half_n);
+		this.sieve.set(0, half_n);
 	}
 
 	public void run() {
