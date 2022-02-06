@@ -6,6 +6,11 @@
 * **Runs**: 100
 * **JDK/JVM**: 17/17
 
+Here we let the sieve run for 60 seconds instead of the original 5.
+
+* **Hypothesis**: Running for only 5 seconds might not be enough for the JIT to stabilize.
+* **Results**: We see no difference in the behaviour when running for 60 seconds.
+
 
 ## Results: [pez-x64-ubuntu](../../machine-pez-x64-ubuntu.md)
 
