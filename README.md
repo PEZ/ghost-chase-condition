@@ -27,4 +27,4 @@ Sample output on [this machine](machine-pez-x64-ubuntu.md):
 9 - Passes: 2760, count: 78498, Valid: true
 ```
 
-I'm getting some good help over at HN: https://news.ycombinator.com/item?id=30226083#30227321
+I'm getting some good help over at HN: https://news.ycombinator.com/item?id=30226083
