@@ -6,11 +6,16 @@
 * **Runs**: 100
 * **JDK/JVM**: 17/17
 
-Pin the NVM to one NUMA node.
+Pin the NVM to one NUMA node using this command line:
+
+```sh
+numactl --cpunodebind=0 --membind=0 java PrimeSieve
+```
 
 * **Hypothesis**: The JVM process sometimes gets scheduled accross a different NUMA node than where the heap is allocated. (Or something like that. Read [this HN thread](https://news.ycombinator.com/item?id=30231945) to not be tained by my limited understanding of the potential issue)
 * **Results**: Not falsified. The runs never drop to the 0.5X-ish performance level.
 
+What is a bit strange about this hypothesis is that the [machine](../../machine-pez-x64-ubuntu.md) only has one NUMA node. Might just be about how I phrase it though. Is it rather about the cpus?
 
 ## Results: [pez-x64-ubuntu](../../machine-pez-x64-ubuntu.md)
 
